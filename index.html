@@ -1,91 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>honeybabes</title>
+    <title>Odin Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c79044192b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main class="container">
-        <!-- HEADER -->
-            <div class="header">
-                <div class="search">
-                    <button class="button-search">search</button>
-                    <input type="text">
-                </div>
+    
+    <div class="main-container">
 
-                <div>bell</div>
-                <div>user</div>
-                <div>name</div>
-
-                <div class="greeting-user">
-                    <div class="user-icon">user</div>
-                    <div>Hi, there</div>
-                    <div class="username">Honeybabes Gimena</div>
-                </div>
-
-                <button>New</button>
-                <button>Upload</button>
-                <button>Search</button>
+<!--  NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- NAV --- -->
+        <div class="nav">
+            <div class="nav-search">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="text">
             </div>
 
-        <!-- SIDEBAR -->
-            <div class="sidebar">
-                <div class="logo">Dashboard</div>
-                <div class="sidebar-1">
-                    <ul class="sidebar-ul">
-                        <li>Home</li>   
-                        <li>Profile</li>
-                        <li>Messages</li>
-                        <li>History</li>
-                        <li>Tasks</li>
-                        <li>Communities</li>
-                    </ul>
-                </div>
-                <div class="sidebar-2">
-                    <ul class="sidebar-ul">
-                        <li>Setting</li>
-                        <li>Support</li>
-                        <li>Privacy</li>
-                    </ul>
+            <div class="nav-user">
+                <i class="fa-solid fa-bell fa-xl"></i>
+                <p>#icon</p>
+                <div>HoneyGail</div>
+            </div>
+
+            <div class="nav-greet">
+                <p class="nav-greet-icon">#icon</p>
+                <p class="nav-greet-greet">Hi There,</p>
+                <div class="nav-greet-name">
+                    <span>Honeygail Gimena</span> <span>@sweethoneydew</span>
                 </div>
             </div>
 
-        <!-- CONTENT -->
-            <div class="content">
+            <div class="nav-buttons">
+                <button class="nav-button-new">New</button>
+                <button class="nav-button-search">Search</button>
+                <button class="nav-button-share">Share</button>
+            </div>
+        </div>
 
-                <div class="project-container">
-                    <div class="title">Your Projects</div>
-                    <div class="project-article">
-                        <div class="project-card"></div>
-                        <div class="project-card"></div>
-                        <div class="project-card"></div>
-                        <div class="project-card"></div>
-                        <div class="project-card"></div>
-                        <div class="project-card"></div>
+<!--  SIDEBAR --- SIDEBAR --- SIDEBAR --- SIDEBAR --- SIDEBAR --- SIDEBAR --- SIDEBAR --- -->
+        <div class="sidebar">
+            <div class="sidebar-title">Dashboard</div>
+
+            <ul class="sidebar-ul">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="">Home</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="">Profile</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-message"></i>
+                    <a href="">Messages</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <a href="">History</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-list-check"></i>
+                    <a href="">Task</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-users-line"></i>
+                    <a href="">Communities</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar-ul">
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-question"></i>
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file-shield"></i>
+                    <a href="">Privacy</a>
+                </li>
+            </ul>
+        </div>
+
+
+<!--  CONTENT --- CONTENT --- CONTENT --- CONTENT --- CONTENT --- CONTENT --- CONTENT --- -->
+        <div class="content">
+            <div class="content-project">
+                <h2>Your Projects</h2>
+                <article class="project-container">
+                    <div class="project-card">
+                        <h4 class="project-card-title">Super Butthead Project</h4>
+                        <p>Lorem ipsum ores laboriosam cupiditate vonem voluptas, voluptatum distinctio sapiente ipsam blanditiis repudiandae animi similique, corrupti cum labore sequi neque, nostrum culpa?</p>
+                        <div class="project-card-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
                     </div>
-                </div>
-             
 
-            <!-- ANNOUNCEMENT -->
-                <div class="announcement-container">
-                    <div>Announcement</div>
-                    <div class="announcement"></div>
-                    <div class="announcement"></div>
-                    <div class="announcement"></div>
-                </div>
+                    <div class="project-card"></div>
 
-            <!-- TRENDING -->
-                <div class="trending-container">
-                    <div class="trending-title">Trending</div>
-                    <div class="trending-card"></div>
-                    <div class="trending-card"></div>
-                    <div class="trending-card"></div>
-                    <div class="trending-card"></div>
-                </div>
+                    <div class="project-card"></div>
+
+                    <div class="project-card"></div>
+
+                    <div class="project-card"></div>
+
+                    <div class="project-card"></div> 
+                </article>
+
             </div>
-    </main>
+
+            <div class="content-announcement">
+                <h2>Announcement</h2>
+                <article class="announcement-container">
+                    <div>
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem s nulla repellat provident at inventore ipsum esse voluptatibus quas, quae placeat numquam.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Community Share Day</h4>
+                        <p>Lorem,minima nulla, quidem exercitationem illum, quo quibusdam nobis perferendis, eligendi a. Nesciunt nulla laborum, porro veniam id veritatis omnis!</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Update Privacy Policy</h4>
+                        <p>Lorem ipsuibus consequatur expedita enim, qui ducimus dolore, illum reprehenderit tempora eaque tempore mollitia architecto?</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="content-trend">
+                <h2>Trending</h2>
+
+                <article class="trend-container">
+                    <div class="trend-user-div">
+                        <div>icon</div>
+                        <div class="trend-user-div">
+                            <div class="trend-user">
+                                <span>@tegan</span>
+                                <br>
+                                <span class="trend-user-bio">some text</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trend-user-div">
+                        <div>icon</div>
+
+                        <div></div>
+                    </div>
+                    <div class="trend-user-div">
+                        <div>icon</div>
+                        <div></div>
+                    </div>
+                    <div class="trend-user-div">
+                        <div>icon</div>
+                        <div></div>
+                    </div>
+
+
+
+
+                </article>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
